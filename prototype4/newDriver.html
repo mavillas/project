@@ -4,12 +4,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Interactive Prototype #1</title>
+    <title>Interactive Prototype #4</title>
 
     <!-- css link -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 
     <link type=text/css href=new.css rel=stylesheet>
+
+    <link type=text/css href="css/default.css" rel=stylesheet>
+    <link type=text/css href="css/default.date.css" rel=stylesheet>
+    <link type=text/css href="css/default.time.css" rel=stylesheet>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
     <!-- js links -->
@@ -17,9 +23,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
+    <script src="js/picker.js"></script>
+    <script src="js/picker.date.js"></script>
+    <script src="js/picker.time.js"></script>
+
     <!-- custom js -->
 
-    <script type=text/javascript src=new.js></script>
+    <script type=text/javascript src=newDriver.js></script>
 </head>
 
 <body>
@@ -30,14 +40,14 @@
         </header>
 
         <section id="content">
-            <button id="rider">Rider</button>
-            <button id="driver">Driver</button>
+            <button class="active" id="driver">Driver</button>
+             <button id="rider">Rider</button>
         </section>
 
         <section id="forms">
             <form>
                 <input type="text" placeholder="Destination" name="destination">
-                <input type="text" placeholder="Date" name="date">
+                <input class="datepicker" type="text" placeholder="Date" name="date">
                 <input class="half_size" type="number" placeholder="# of Seats" name="seats">
                 <input class="half_size" type="text" placeholder="Price" name="price">
                 <input type="text" placeholder="Pickup Location (Optional)" name="pickup">
@@ -47,7 +57,12 @@
 
 
         <footer>
-
+            <ul>
+                <li><a class="current" href="#"><i class="fa fa-plus-circle fa-2x"></i></a></li>
+                <li><a href="messages.html"><i class="fa fa-envelope fa-2x"></i></a></li>
+                <li><a href="profile.html"><i class="fa fa-user fa-2x"></i></a></li>
+                <li><a href="settings.html"><i class="fa fa-cog fa-2x"></i></a></li>
+            </ul>
         </footer>
     </section>
 

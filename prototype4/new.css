@@ -65,7 +65,7 @@ button {
     margin:40px 0;
 }
 
-button#driver {
+.active {
     background-color:#517FE7;
     color:white;
 }
@@ -78,5 +78,28 @@ footer {
     height:50px;
     width:375px;
     background-color: #517FE7;
-    margin-top:90px;
+    position:fixed;
+    top:618px;
+}
+
+footer ul {
+    height:50px;
+    width:375px;
+    padding:10px 0;
+}
+
+footer ul li {
+    list-style-type: none;
+    list-style: none;
+    display:inline;
+    margin: 0px 30px;
+    color:white;
+}
+
+footer a:link, footer a:visited {
+    color:white;
+}
+
+.current {
+    color:#2D4A8E;
 }

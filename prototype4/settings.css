@@ -16,24 +16,13 @@ header h1{
     padding-top:20px;
     font-weight:normal;
 }
-main {
+section {
     width:375px;
     height:667px;
     background-color: #f3f3f3;
     border: 1px solid #747474;
     margin:auto;
     font-family: Roboto;
-}
-
-#choose {
-    float:clear;
-    margin-top:60px;
-    text-align: center;
-}
-
-.active {
-    background-color:#517FE7;
-    color:white;
 }
 
 div#avatar {
@@ -52,10 +41,6 @@ section#avatar_info {
     border:none;
 }
 
-div#list {
-    margin: 15px 18px;
-}
-
 section#upcoming_rides h5, section#past_rides h5 {
     font-weight:normal;
     margin:0 0 10px 0;
@@ -67,6 +52,7 @@ section#upcoming_rides, section#past_rides{
     background-color:white;
     box-shadow: 0 0 4px #7f7f7f;
     border-radius:3px;
+    margin-top:70px;
     border:none;
     padding:10px;
 }
@@ -111,6 +97,23 @@ button.review {
     background-color: #FFB74D;
     border-color:#FFB74D;
     color:white;
+}
+
+
+
+#list li {
+    width:85%;
+    font-weight: bold;
+    list-style: none;
+    margin:10px auto;
+    padding: 10px;
+    border-bottom: 1px solid #7f7f7f;
+    color:#3D3B3B;
+}
+
+#list a:link, #list a:visited {
+    color:#3d3b3b;
+    text-decoration: none;
 }
 
 footer {

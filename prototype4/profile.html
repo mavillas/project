@@ -4,18 +4,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Interactive Prototype #1</title>
+    <title>Interactive Prototype #4</title>
 
     <!-- css link -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 
     <link type=text/css href=profile.css rel=stylesheet>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
     <!-- js links -->
     <!-- jQuery linked first -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
 
     <!-- custom js -->
 
@@ -24,12 +26,14 @@
 
 <body>
 
-    <section>
+    <main>
         <header>
             <h1> Profile</h1>
         </header>
         <div id=avatar>
         </div>
+
+
 
         <section id="avatar_info">
             <h1> John Doe</h1>
@@ -37,24 +41,37 @@
             <h5>jdoe@ucdavis.edu</h5>
         </section>
 
-        <section id=upcoming_rides>
-            <h5>Upcoming Rides</h5>
-            <h3> Davis > San Jose</h3>
-            <button class="cancel">Cancel</button>
-            <button class="details">Details</button>
+
+        <section id="choose">
+            <button class="active" id="driver">Scheduled</button>
+            <button id="rider">Past</button>
         </section>
 
-        <section id=past_rides>
-            <h5>Past Rides</h5>
-            <h3> Walnut Creek > Davis</h3>
-            <button class="review">Review</button>
-        </section>
+        <div id="list">
+            <section class="notdone" id=upcoming_rides>
+
+                <h3> Davis > San Jose</h3>
+                <button class="cancel">Cancel</button>
+                <button class="details">Details</button>
+            </section>
+
+            <section class="done" id=past_rides>
+
+                <h3> Walnut Creek > Davis</h3>
+                <button class="review">Review</button>
+            </section>
+        </div>
 
 
         <footer>
-
+            <ul>
+                <li><a href="newDriver.html"><i class="fa fa-plus-circle fa-2x"></i></a></li>
+                <li><a href="messages.html"><i class="fa fa-envelope fa-2x"></i></a></li>
+                <li><a class="current" href="#"><i class="fa fa-user fa-2x"></i></a></li>
+                <li><a href="settings.html"><i class="fa fa-cog fa-2x"></i></a></li>
+            </ul>
         </footer>
-    </section>
+    </main>
 
 </body>
 

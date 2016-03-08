@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang=en>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Prototype #4</title>
+
+    <!-- css link -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+
+    <link type=text/css href=rideList.css rel=stylesheet>
+
+    <link type=text/css href="css/default.css" rel=stylesheet>
+    <link type=text/css href="css/default.date.css" rel=stylesheet>
+    <link type=text/css href="css/default.time.css" rel=stylesheet>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <!-- js links -->
+    <!-- jQuery linked first -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script src="js/picker.js"></script>
+    <script src="js/picker.date.js"></script>
+    <script src="js/picker.time.js"></script>
+
+
+    <!-- custom js -->
+
+    <script type=text/javascript src=rideList.js></script>
+</head>
+
+<body>
+
+    <section>
+        <header>
+            <h1>Ride List</h1>
+        </header>
+
+
+
+        <section id="top">
+            <input type="text" placeholder="Destination" name="destination" value="San Jose, CA">
+            <input class="datepicker" type="text" placeholder="Date" name="date" value="12 March, 2016">
+
+        </section>
+
+
+        <h3 class="time">1:05pm</h3>
+        <section id=upcoming_rides>
+            <h3> Davis > San Jose</h3>
+            <p>3 Seats Available</p>
+            <p>$10/person</p>
+            <button class="reserve">Reserve</button>
+        </section>
+
+        <section id=upcoming_rides>
+            <h3> Davis > San Jose</h3>
+            <p>3 Seats Available</p>
+            <p>$10/person</p>
+            <button class="reserve">Reserve</button>
+        </section>
+        <h3 class="time">1:05pm</h3>
+        <section id=upcoming_rides>
+            <h3> Davis > San Jose</h3>
+            <p>3 Seats Available</p>
+            <p>$10/person</p>
+            <button class="reserve">Details</button>
+        </section>
+
+
+        <footer>
+            <ul>
+                <li><a href="newDriver.html"><i class="fa fa-plus-circle fa-2x"></i></a></li>
+                <li><a href="messages.html"><i class="fa fa-envelope fa-2x"></i></a></li>
+                <li><a class="current" href="#"><i class="fa fa-user fa-2x"></i></a></li>
+                <li><a href="settings.html"><i class="fa fa-cog fa-2x"></i></a></li>
+            </ul>
+        </footer>
+    </section>
+
+</body>
+
+</html>

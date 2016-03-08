@@ -5,11 +5,18 @@
 
 $(document).ready(function () {
     console.log("ready");
-    alert('This is a prototype of the UC Davis Ridesharing app.')
-
+    
     $('.button').click(function () {
+        window.location.href = 'rideList.html';
+        return false;
+    });
+    
+    $('#driver').click(function () {
         window.location.href = 'newDriver.html';
         return false;
     });
+
+    $('.datepicker').pickadate();
+
 
 });

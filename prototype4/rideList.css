@@ -16,44 +16,38 @@ header h1{
     padding-top:20px;
     font-weight:normal;
 }
-main {
+section {
     width:375px;
     height:667px;
-    background-color: #f3f3f3;
+    background-color: white;
     border: 1px solid #747474;
     margin:auto;
     font-family: Roboto;
+    overflow:hidden;
 }
 
-#choose {
-    float:clear;
-    margin-top:60px;
-    text-align: center;
-}
 
-.active {
-    background-color:#517FE7;
-    color:white;
-}
-
-div#avatar {
-    width:124px;
-    height:124px;
-    border-radius:50%;
-    border: 2px solid #7f7f7f;
-    float:left;
-    margin: 20px 20px 0 50px;
-}
-
-section#avatar_info {
-    margin-top:50px;
-    height:60px;
+#top {
+    margin-top:0px;
+    height:143px;
     line-height: 20px;
     border:none;
+    background-color:#f3f3f3;
+    box-shadow: 0 0 4px #7f7f7f;
 }
 
-div#list {
-    margin: 15px 18px;
+input {
+    width:90%;
+    height:45px;
+    margin:18px 14px 0;
+    background-color:#fff;
+    border-radius: 3px;
+    font-family: roboto;
+    font-size: 14px;
+    color:#7f7f7f;
+    padding-left:10px;
+    box-shadow: 0 0 4px #7f7f7f;
+    border-style: none;
 }
 
 section#upcoming_rides h5, section#past_rides h5 {
@@ -67,20 +61,19 @@ section#upcoming_rides, section#past_rides{
     background-color:white;
     box-shadow: 0 0 4px #7f7f7f;
     border-radius:3px;
+    margin-top:20px;
     border:none;
     padding:10px;
 }
 
+h3.time {
+    margin:10px 0 -10px 15px;
+    color:#517FE7;
+}
 section#past_rides {
     margin-top:24px;
 }
 
-
-p{
-    color:#2D4A8E;
-    margin-top:25px;
-    text-decoration: underline;
-}
 
 button {
     border-radius: 3px;
@@ -101,7 +94,7 @@ button.cancel {
     color:#D32F2F;
 }
 
-button.details {
+button.reserve {
     background-color: #517FE7;
     border-color:#517FE7;
     color:white;
